@@ -2,42 +2,47 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <title>Волшебник</title>
+    <title>Генератор случайных людей</title>
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
           integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans" rel="stylesheet">
     <link rel="stylesheet" href="style.css" type="text/css"/>
-    <link rel="shortcut icon" href="https://www.pngall.com/wp-content/uploads/2017/05/Magic-Transparent.png" type="image/png">
 </head>
 <body>
 <div class="container">
     <div class="row game-card align-items-center">
-        <div class="col col-md-4 offset-md-4">
+        <div class="col col-md-6 offset-md-3">
             <div class="card text-center">
                 <div class="card-header">
-                    <p class="m-0">Вопрос №<span id="orderNumberField">5</span></p>
+                    <p class="m-0">ГЕНЕРАТОР СЛУЧАЙНОГО ЧЕЛОВЕКА</p>
                 </div>
                 <div class="card-body">
-                    <div class="row no-gutters">
+                    <div class="row">
                         <div class="col">
-                            <h3 class="card-title m-0"><span id="answerField">Вы загадали число 5?</span></h3>
+                            <h3 class="card-title"><span id="surnameOutput">Пупкин</span></h3>
+                            <h4><span id="firstNameOutput">Иван</span> <span id="secondNameOutput">Васильевич</span></h4>
+                            <p>
+                                <span id="genderOutput">Генерация пола</span>
+                                <span>, </span>
+                                <span id="birthDayOutPut"> дня </span>
+                                <span id="birthMonthOutput">,месяца </span>
+                                <span id="birthYearOutput">,года рождения</span>
+                                <br>
+                                <span id="vonBeruf">Проффесия</span>
+                                <br>
+                                    <div class="buttonGroup">
+                                         <button class="btnGeneration" id="btnGeneration">Сгенерировать</button>
+                                        <button class="btnReset" id="btnReset">Сбросить</button>
+                                    </div>
+                            </p>
                         </div>
                     </div>
-                </div>
-                <div class="card-body">
-                    <div class="btn-group">
-                        <button class="btn btn-info" id="btnLess">Меньше<br>&#11015;</button>
-                        <button class="btn btn-success btn-lg" id="btnEqual">Верно!</button>
-                        <button class="btn btn-info" id="btnOver">Больше<br>&#11014</button>
-                    </div>
-                </div>
-                <div class="card-footer">
-                    <button class="btn btn-link" id="btnRetry">Заново</button>
                 </div>
             </div>
         </div>
     </div>
 </div>
-<script src="script.js"></script>
+<script src="personGenerator.js"></script>
+<script src="init.js"></script>
 </body>
 </html>
